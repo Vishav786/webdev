@@ -1,2 +1,2 @@
 # webdev
-learn the mern atck
+learn the mern Satck
