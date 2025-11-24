@@ -1,19 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>let see the  world </title>
+  <meta charset="UTF-8" />
+  <title>Weave – weaving stories into plans.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <ul>
-    <li><div class="group">hi</div></li>
-    <li><div class="group">bye </div></li>
-    <li><div class="group">why </div></li>
-    <li><div class="group">you are </div></li>
-    <li><div class="group">here </div></li>
-</ul>
-    <p> University of Auckland </p>
-    
+<body>
+<div class="page">
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="nav-logo-mark"></div>
+        <span>Weave&nbsp;</span>
+      </div>
+      <nav class="nav-center">
+        <span class="nav-link nav-link--active">Home</span>
+        <span class="nav-link">Journeys</span>
+        <span class="nav-link">Community</span>
+        <span class="nav-link">How it works</span>
+        <span class="nav-link">About</span>
+      </nav>
+      <div class="nav-right">
+        <button class="btn btn-ghost">Login</button>
+        <button class="btn btn-primary">Craft your trip</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span>Verified journeys • Real traveller video</span>
+      </div>
+      <h1 class="hero-title">Travel like you mean it.</h1>
+      <p class="hero-subtitle">
+        Every itinerary Weave is backed by real travellers, immersive
+        videos and AI that adapts to your plans in real time.
+      </p>
+
+      <div class="hero-search">
+        <div class="hero-search-field">
+          <span class="hero-search-label">Where to?</span>
+          <input class="hero-search-input" placeholder="Search a city or country" />
+        </div>
+        <div class="hero-search-field">
+          <span class="hero-search-label">Dates</span>
+          <input class="hero-search-input" placeholder="Add dates" />
+        </div>
+        <div class="hero-search-field">
+          <span class="hero-search-label">Travellers</span>
+          <input class="hero-search-input" placeholder="2 adults · 0 kids" />
+        </div>
+        <button class="btn btn-primary hero-search-btn">Start planning</button>
+      </div>
+
+      <div class="hero-meta">
+        <span>Video-backed journeys only</span>
+        <span class="hero-meta-dot">Real-time support on trip</span>
+        <span class="hero-meta-dot">Join a verified travel community</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust">
+    <div class="trust-inner">
+      <span class="trust-label">Featured by</span>
+      <div class="trust-logos">
+        <span class="trust-brand">Travel Review Weekly</span>
+        <span class="trust-brand">Globe &amp; Go</span>
+        <span class="trust-brand">Explorer Journal</span>
+        <span class="trust-brand">Nomad Insider</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL EXPERTS / COMMUNITY -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Real travellers, not stock photos</div>
+        <h2 class="section-title">No one shows it like our community</h2>
+        <p class="section-subtitle">
+          Meet the travellers and local experts who record their journeys in 360°,
+          share what really worked, and help you skip the guesswork.
+        </p>
+      </div>
+
+      <div class="slider" data-slider>
+        <div class="slider-controls">
+          <button class="slider-btn" data-prev>&larr;</button>
+          <button class="slider-btn" data-next>&rarr;</button>
+        </div>
+
+        <div class="slider-track">
+          <article class="card-expert">
+            <div class="card-expert-img" style="background-image:url('https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+            <div class="card-expert-body">
+              <div class="card-expert-name">Mara</div>
+              <div class="card-expert-meta">Local host · Iceland</div>
+              <p class="card-expert-copy">
+                “Adventure guests always ask for the northern lights. I show
+                them the warm pools, hidden bakeries and quiet lava fields you
+                won’t find on the typical tour.”
+              </p>
+            </div>
+          </article>
+
+          <article class="card-expert">
+            <div class="card-expert-img" style="background-image:url('https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+            <div class="card-expert-body">
+              <div class="card-expert-name">Kaito</div>
+              <div class="card-expert-meta">Urban storyteller · Tokyo</div>
+              <p class="card-expert-copy">
+                “My 360° night walk shows every corner of Shibuya to Shinjuku
+                — so when you land, you already recognise the streets.”
+              </p>
+            </div>
+          </article>
+
+          <article class="card-expert">
+            <div class="card-expert-img" style="background-image:url('https://images.pexels.com/photos/2540699/pexels-photo-2540699.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+            <div class="card-expert-body">
+              <div class="card-expert-name">Aanya</div>
+              <div class="card-expert-meta">Food explorer · India</div>
+              <p class="card-expert-copy">
+                “I take travellers through the markets I grew up in. You’ll see
+                the chai stalls, spice shops and back alleys exactly how we do.”
+              </p>
+            </div>
+          </article>
+
+          <article class="card-expert">
+            <div class="card-expert-img" style="background-image:url('https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+            <div class="card-expert-body">
+              <div class="card-expert-name">Diego</div>
+              <div class="card-expert-meta">Ocean guide · Brazil</div>
+              <p class="card-expert-copy">
+                “Every dive I film the route, brief the risks and mark the fish
+                we spotted. Next time, you’ll already know the reef.”
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURATED TRIPS + HOW IT WORKS -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="curated">
+        <div class="curated-left">
+          <div class="curated-content">
+            <div class="curated-pill">
+              <span>Journeys we can’t stop replaying</span>
+            </div>
+            <h2 class="curated-title">Handbuilt trips for travellers like you.</h2>
+            <p class="curated-text">
+              No two Weave journeys are the same. Every itinerary is
+              tuned to your habits and backed by immersive video captured by
+              people who actually went.
+            </p>
+            <button class="btn btn-primary">Explore signature journeys</button>
+          </div>
+        </div>
+
+        <aside class="curated-right">
+          <article class="curated-journey-card">
+            <div class="curated-journey-media"></div>
+            <div class="curated-journey-body">
+              <h3 class="curated-journey-title">Marrakech city &amp; desert food trail</h3>
+              <div class="curated-journey-meta">
+                6 days · Best in October–March · From $1,450
+              </div>
+              <div class="pill-row">
+                <span class="pill">Street food</span>
+                <span class="pill">Hidden riads</span>
+                <span class="pill">360° spice market walk</span>
+              </div>
+              <button class="btn btn-ghost" style="padding-inline:16px;">See full itinerary</button>
+            </div>
+          </article>
+        </aside>
+      </div>
+
+      <div class="section-header" style="margin-top:52px;">
+        <div class="section-eyebrow">How it works</div>
+        <h2 class="section-title">From “I want to go” to “I can’t believe we did that”.</h2>
+      </div>
+      <div class="how-grid">
+        <article class="how-card">
+          <div class="how-icon">🎥</div>
+          <h3 class="how-title">Start with real footage</h3>
+          <p class="how-text">
+            Browse journeys recorded by our travellers and locals. Every trip
+            has real video or 360° clips so you know exactly what to expect.
+          </p>
+        </article>
+        <article class="how-card">
+          <div class="how-icon">✨</div>
+          <h3 class="how-title">Let AI tune it to you</h3>
+          <p class="how-text">
+            Your profile learns your pace, budget and style. Our AI reworks the
+            itinerary to match you — or builds a surprise trip from scratch.
+          </p>
+        </article>
+        <article class="how-card">
+          <div class="how-icon">🛰️</div>
+          <h3 class="how-title">Stay supported in real time</h3>
+          <p class="how-text">
+            If weather hits or plans change, Weave suggests new
+            activities instantly and syncs them to your calendar and travel
+            group.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS + RESPONSIBLE -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">What travellers are saying</div>
+        <h2 class="section-title">Don’t listen to us. Listen to them.</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <p class="testimonial-quote">
+            “The 360° preview of our Bali villa sold it. When rain cancelled
+            our volcano hike, the app swapped in a cooking class and spa day
+            without us touching a thing.”
+          </p>
+          <div class="testimonial-footer">
+            <span>Sam &amp; Priya · Indonesia</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p class="testimonial-quote">
+            “I usually spend weeks planning. This time I just picked a journey,
+            answered a few questions and let the AI handle the rest. It even
+            matched me with another solo traveller.”
+          </p>
+          <div class="testimonial-footer">
+            <span>Lena · Portugal</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p class="testimonial-quote">
+            “We booked the Ultra tier for my parents’ anniversary. Private
+            transfers, a surprise rooftop concert, and a human concierge who
+            felt like a friend by day two.”
+          </p>
+          <div class="testimonial-footer">
+            <span>Rahul · Italy</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:16px; display:flex; justify-content:flex-end;">
+        <div class="rating-badge">
+          <span>⭐ 4.9/5 from 500+ verified journeys</span>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div>
+          <h3 class="strip-title">Your time is priceless.</h3>
+          <p class="strip-text">
+            The average international trip takes more than 30 hours of research.
+            Weave cuts through the noise with journeys that have already
+            been tested, filmed and refined by people like you.
+          </p>
+        </div>
+        <div class="strip-image" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOU & DESTINATION / IMPACT + NEWSLETTER -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="duo">
+        <div class="duo-visual">
+          <div class="duo-circle">
+            <div class="duo-img-1"></div>
+            <div class="duo-label">You</div>
+          </div>
+          <div class="duo-circle">
+            <div class="duo-img-2"></div>
+            <div class="duo-label">Your Destination</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="duo-copy-title">Trips you can feel good about.</h3>
+          <p class="duo-copy-text">
+            When a place thrives, your experience does too. Every Weave
+            booking routes part of your spend to local partners, guides and
+            community projects you can see and verify.
+          </p>
+          <ul class="duo-copy-list">
+            <li>Work with vetted local hosts instead of opaque middlemen.</li>
+            <li>Support small businesses, not just the biggest booking engines.</li>
+            <li>Track your impact and carbon footprint in your profile.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <h3 style="margin-bottom:4px;">Join our travel beta crew.</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted);">
+          Be first to test surprise journeys, AI trip co-pilots and member-only rewards.
+        </p>
+        <div class="newsletter-input-wrap">
+          <input class="newsletter-input" placeholder="Enter your best travel email" />
+          <button class="btn btn-primary newsletter-btn">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-block">
+          <div class="footer-logo">
+            <div class="nav-logo-mark"></div>
+            <span>&nbsp;Weave </span>
+          </div>
+          <p>
+            A verified travel community where every itinerary is backed by real
+            video, real people and real-time support.
+          </p>
+          <div class="footer-social">
+            <span>◎</span>
+            <span>◎</span>
+            <span>◎</span>
+            <span>◎</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div>
+            <div class="footer-col-title">About</div>
+            <a class="footer-link" href="#">How it works</a>
+            <a class="footer-link" href="#">Our commitments</a>
+            <a class="footer-link" href="#">Responsible travel</a>
+          </div>
+          <div>
+            <div class="footer-col-title">Support</div>
+            <a class="footer-link" href="#">Contact us</a>
+            <a class="footer-link" href="#">Help centre</a>
+            <a class="footer-link" href="#">Privacy &amp; cookies</a>
+            <a class="footer-link" href="#">Terms of use</a>
+          </div>
+          <div>
+            <div class="footer-col-title">For partners</div>
+            <a class="footer-link" href="#">Become a video host</a>
+            <a class="footer-link" href="#">Travel creators</a>
+            <a class="footer-link" href="#">Ultra concierge</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-destinations">
+        <div class="dest-grid">
+          <div>
+            <div class="dest-region">Europe</div>
+            <ul class="dest-list">
+              <li>France</li>
+              <li>Italy</li>
+              <li>Spain</li>
+              <li>Iceland</li>
+              <li>Portugal</li>
+            </ul>
+          </div>
+          <div>
+            <div class="dest-region">Asia</div>
+            <ul class="dest-list">
+              <li>Japan</li>
+              <li>Thailand</li>
+              <li>India</li>
+              <li>Vietnam</li>
+              <li>Indonesia</li>
+            </ul>
+          </div>
+          <div>
+            <div class="dest-region">Americas</div>
+            <ul class="dest-list">
+              <li>Mexico</li>
+              <li>Peru</li>
+              <li>Canada</li>
+              <li>United States</li>
+              <li>Colombia</li>
+            </ul>
+          </div>
+          <div>
+            <div class="dest-region">Africa &amp; Oceania</div>
+            <ul class="dest-list">
+              <li>Morocco</li>
+              <li>South Africa</li>
+              <li>Kenya</li>
+              <li>Australia</li>
+              <li>New Zealand</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> RealTrip 360. All rights reserved.</span>
+          <span>Built for concept &amp; prototyping purposes.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- External JS -->
+<script src="script.js"></script>
 </body>
 </html>
